@@ -1,0 +1,51 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Jul 27 15:16:14 2012
+;; Desktop file format version 206
+;; Emacs version 24.0.50.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("" "desk"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/Users/chen/.emacs" "/Users/chen/work/proxy-server/SConstruct" "/Users/chen/work/proxy-server/app.cpp" "/Users/chen/work/python-src/fileproxy/uploadhandler.py" "modes.el" "~/.emacs.d/configurations/modes.el" "~/.emacs.d/configurations/emacs-std.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/chen/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(auto-complete-mode yas/minor-mode linum-mode)
+  385
+  '(327 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/chen/work/proxy-server/SConstruct"
+  "SConstruct"
+  'python-mode
+  '(hg-mode ropemacs-mode auto-complete-mode yas/minor-mode linum-mode)
+  1812
+  '(1812 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/chen/work/python-src/fileproxy/uploadhandler.py"
+  "uploadhandler.py"
+  'python-mode
+  '(hg-mode flymake-mode ropemacs-mode auto-complete-mode yas/minor-mode linum-mode)
+  3581
+  '(3581 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
