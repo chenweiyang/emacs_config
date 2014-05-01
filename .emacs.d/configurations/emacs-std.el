@@ -32,7 +32,6 @@
 (setq-default fill-column 80)
 
 ;; set Tab
-(setq-default indent-tabs-mode nil)
 (setq defualt-tab-width 4)
 (setq tab-stop-list())
 
