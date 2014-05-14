@@ -6,8 +6,8 @@
 (setq load-path 
       (cons "~/.emacs.d/configurations" 
             (cons "~/.emacs.d/extensions" load-path)))
-(add-to-list 'load-path "~/src/cc-mode/")
-(add-to-list 'load-path "~/src/doxymacs-1.8.0/lisp/")
+(add-to-list 'load-path "~/emacs/cedet")
+(add-to-list 'load-path "~/emacs/ibus-el")
 (load "emacs-std") 
 (load "cedet-rc")
 (load "modes") 

@@ -10,7 +10,10 @@
 (defun cwy/c-mode-common-hook()
   (subword-mode 1)
   (gtags-mode 1)
-  (doxymacs-mode 1)
+  ;(doxymacs-mode 1)
+  (setq tab-width 8
+	indent-tabs-mode t
+	c-basic-offset 4)
   (local-set-key "\M-." 'gtags-find-tag)
   (local-set-key "\M-*" 'gtags-pop-stack)
   (local-set-key "\C-x4." 'gtags-find-tag-other-window))
@@ -28,7 +31,7 @@
   (c-set-offset 'innamespace 0)
   (c-set-offset 'friend '-))
 
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+;(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-hook 'c++-mode-hook 'cwy/c++-mode-common-hook)
 
 ;; java mode hook for ant
@@ -50,16 +53,16 @@
 ;                  'py-beginning-of-def-or-class)
 ;             (setq outline-regexp "def\\|class ")))
 
-(add-to-list 'load-path "~/hacking/lisp/slime")
+;(add-to-list 'load-path "~/hacking/lisp/slime")
 ;; boost slime load
 ;(setq slime-lisp-implementations
 ;           '((sbcl ("sbcl" "--core" "~/hacking/lisp/slime/sbcl.core-for-slime"))))
-(setq inferior-lisp-program "/usr/local/bin/sbcl"
-      lisp-indent-function 'common-lisp-indent-function
-      slime-complete-symbol-function 'slim-fuzzy-complete-symbol
-      common-lisp-hyperspec-root "file:///usr/share/common-lisp/HyperSpec/")
-(require 'slime-autoloads)
-(slime-setup '(slime-fancy slime-banner))
+;(setq inferior-lisp-program "/usr/local/bin/sbcl"
+;      lisp-indent-function 'common-lisp-indent-function
+;      slime-complete-symbol-function 'slim-fuzzy-complete-symbol
+;      common-lisp-hyperspec-root "file:///usr/share/common-lisp/HyperSpec/")
+;(require 'slime-autoloads)
+;(slime-setup '(slime-fancy slime-banner))
 
 ;;symbian c++ mode
 ;;(autoload 'symbian-c++-mode "symbian-c++-mode" "Symbian C++ mode" t)
@@ -71,7 +74,9 @@
 (setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-hook 'lua-mode-hook 'turn-on-font-lock)
-
+(defadvice lua-electric-match (around last-command-char-fixup activate) 
+  (let ((last-command-char last-command-event)) 
+    ad-do-it))
 ;; protobuf mode
 (require 'protobuf-mode)
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
@@ -112,9 +117,9 @@
 
 ; yasnippet
 (add-to-list 'load-path
-              "~/src/yasnippet")
+             "~/emacs/yasnippet")
 (require 'yasnippet)
-(setq yas/snippet-dirs '("~/.emacs.d/snippets" "~/src/yasnippet/snippets/"))
+(setq yas/snippet-dirs '("~/.emacs.d/snippets" "~/emacs/yasnippet/snippets/"))
 (yas-global-mode 1)
 
 
@@ -170,4 +175,5 @@
 ;; (eval-after-load "auto-complete"
 ;;   '(add-to-list 'ac-modes 'nrepl-mode))
 
-
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
