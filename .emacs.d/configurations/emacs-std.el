@@ -113,8 +113,9 @@
           'comint-strip-ctrl-m)
 
 ;; Use the predefined fontset "fontset-standard"
-(set-frame-font
- "-apple-inconsolata-medium-r-normal--17-130-72-72-m-130-iso10646-1")
+;(set-frame-font
+; "-apple-inconsolata-medium-r-normal--17-130-72-72-m-130-iso10646-1")
+
 
 ;; hide toolbar
 (tool-bar-mode -1)
