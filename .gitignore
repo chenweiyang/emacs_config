@@ -1,2 +1,7 @@
 # Compiled
 *.elc
+yasnippet/
+cedet/
+.emacs.d/semanticdb/
+.emacs.d/session*
+*.dat

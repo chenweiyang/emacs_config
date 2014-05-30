@@ -151,5 +151,5 @@
              (define-key c-mode-base-map (kbd "<f9>")  'gud-break)
              (define-key c-mode-base-map (kbd "S-<f9>") 'gud-remove)))  
 
-(require 'doxymacs)
+;(require 'doxymacs)
 

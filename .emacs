@@ -26,7 +26,6 @@
  '(current-language-environment "UTF-8")
  '(default-input-method "rfc1345")
  '(diff-switches "-ubra")
- '(ede-maven2-maven-options (quote ("-B" "-o")) nil (ede/maven2))
  '(ediff-diff-options "--binary --ignore-space-change")
  '(ediff-merge-split-window-function (quote split-window-vertically))
  '(glasses-face (quote bold))
@@ -36,7 +35,7 @@
  '(safe-local-variable-values (quote ((Package . XREF) (Syntax . Common-lisp))))
  '(semantic-idle-scheduler-idle-time 3)
  '(show-paren-mode t nil (paren))
- '(user-mail-address "chenweiyang@yy.com"))
+ '(user-mail-address "chenweiyang@gmail.com"))
 
 
 (defun screen-width nil -1)

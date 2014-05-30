@@ -1,5 +1,5 @@
 ;; cedet
-(setq cedet-root-path "~/src/cedet/")
+(setq cedet-root-path "~/emacs/cedet/")
 (load-file (concat cedet-root-path "cedet-devel-load.el"))
 (add-to-list 'load-path (concat cedet-root-path "contrib"))
 
