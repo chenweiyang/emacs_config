@@ -31,10 +31,6 @@
 (setq fill-column 80)
 (setq-default fill-column 80)
 
-;; set Tab
-(setq defualt-tab-width 4)
-(setq tab-stop-list())
-
 ;; set parentheses
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)

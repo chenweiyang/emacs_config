@@ -7,7 +7,7 @@
       (cons "~/.emacs.d/configurations" 
             (cons "~/.emacs.d/extensions" load-path)))
 (add-to-list 'load-path "~/emacs/cedet")
-(add-to-list 'load-path "~/emacs/ibus-el")
+;(add-to-list 'load-path "~/emacs/ibuas-el")
 (load "emacs-std") 
 (load "cedet-rc")
 (load "modes") 

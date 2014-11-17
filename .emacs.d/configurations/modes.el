@@ -1,8 +1,5 @@
 ;;some mode
 
-;; enable iswitchb-mode
-(iswitchb-mode t)
-
 ;; gnu global
 (autoload 'gtags-mode "gtags" "" t)
 
@@ -175,6 +172,7 @@
 ;; (eval-after-load "auto-complete"
 ;;   '(add-to-list 'ac-modes 'nrepl-mode))
 
-(require 'ibus)
-(add-hook 'after-init-hook 'ibus-mode-on)
+;(require 'ibus)
+;(add-hook 'after-init-hook 'ibus-mode-on)
+
 
